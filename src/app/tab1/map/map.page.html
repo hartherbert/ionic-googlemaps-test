@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>map</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding-start padding-end>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+       My title
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div [id]="mapId"></div>
+    </ion-card-content>
+
+
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          Item
+        </ion-label>
+      </ion-item>
+
+      <!-- Item as a Button -->
+      <ion-item>
+        <ion-label>
+          Button Item
+        </ion-label>
+      </ion-item>
+
+      <!-- Item as an Anchor -->
+      <ion-item href="https://www.ionicframework.com">
+        <ion-label>
+          Anchor Item
+        </ion-label>
+      </ion-item>
+
+      <ion-item color="secondary">
+        <ion-label>
+          Secondary Color Item
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <!--<ion-list lines="none">
+      <ion-item *ngIf="(Facility$|async) as facility">
+        &lt;!&ndash;<ion-icon color="primary" [icon]="state?.type" slot="start"></ion-icon>&ndash;&gt;
+        <ng-template [ngIf]="facility?.travelInformation" [ngIfElse]="distanceOnly" slot="start">
+          <div class="travel">
+            <h3>{{facility?.travelInformation?.distance.text }}</h3>
+            <div class="travel-duration">
+              &lt;!&ndash;<ion-icon color="medium" icon="time"></ion-icon>
+              <ion-text color="medium">{{facility?.travelInformation?.duration.text }}</ion-text>&ndash;&gt;
+              <ion-icon icon="time"></ion-icon>
+              <ion-text>{{facility?.travelInformation?.duration.text }}</ion-text>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template #distanceOnly>
+          <ion-icon color="primary" [icon]="facility?.icon" slot="start"></ion-icon>
+          <ion-label>{{facility?.distance | distance}}</ion-label>
+        </ng-template>
+        <ion-button (click)="launchNavigation(facility)" fill="solid" slot="end" color="primary" size="default" shape="round">
+          <ion-icon mode="md" slot="icon-only" name="navigate"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+
+      &lt;!&ndash;region Details&ndash;&gt;
+      <ng-container *ngIf="hasFacilityDetails$ | async; else spacer">
+        <ion-item (click)="toggleDetails()" class="details-bar" detail="true" [detailIcon]="detailIcon">
+          &lt;!&ndash;<ion-icon color="medium" slot="start" icon="information-circle-outline"></ion-icon>&ndash;&gt;
+          <app-sub-text>Details</app-sub-text>
+          &lt;!&ndash;<ion-label color="medium">Details</ion-label>&ndash;&gt;
+          &lt;!&ndash;<ion-icon color="medium" slot="end" icon="information-circle-outline"></ion-icon>&ndash;&gt;
+        </ion-item>
+        <ng-container *ngIf="showDetails$ | async">
+          <ng-container *ngIf="(FacilityDetails$ | async) as details">
+            <app-details-item *ngFor="let detail of details" [detail]="detail" [editable]="false">
+            </app-details-item>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+
+      &lt;!&ndash;endregion&ndash;&gt;
+
+
+
+    </ion-list>-->
+  </ion-card>
+</ion-content>
+
